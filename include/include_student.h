@@ -1,6 +1,3 @@
-//
-// Created by perfest on 17.09.2020.
-//
 
 #ifndef TEMPLATE_STUDENT_H
 #define TEMPLATE_STUDENT_H

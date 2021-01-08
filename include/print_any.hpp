@@ -1,4 +1,4 @@
-// Copyright 2020 typeperfest
+// Copyright 2020 gnole
 #ifndef INCLUDE_PRINT_ANY_HPP_
 #define INCLUDE_PRINT_ANY_HPP_
 #include <any>

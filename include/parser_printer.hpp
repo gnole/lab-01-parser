@@ -1,4 +1,3 @@
-// Copyright 2018 Your Name <your_email>
 
 #ifndef INCLUDE_PARSER_PRINTER_HPP_
 #define INCLUDE_PARSER_PRINTER_HPP_
