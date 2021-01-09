@@ -110,7 +110,7 @@ std::ostream& printer(const std::vector<Student>& students, std::ostream& out) {
     out << std::setfill(' ') << std::setw(7) << student.Group
               << '|' << ' ';
     out << std::setfill(' ') << std::setw(5)
-              << ssany(student.Avg).str() << '|' << ' ';
+              << student.Avg << '|' << ' ';
     out << std::setfill(' ') << std::setw(14)
               << student.Debt
               << '|';

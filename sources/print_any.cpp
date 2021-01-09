@@ -60,6 +60,5 @@ std::ostream& operator << (std::ostream &out_str1, const std::any& object)
     throw ex;
   }
   out_str1 << out_str.str();
-
   return out_str1;
 }
