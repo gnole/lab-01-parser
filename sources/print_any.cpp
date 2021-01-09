@@ -34,7 +34,6 @@ std::stringstream ssany(const std::any& object)
 
 std::ostream& operator << (std::ostream &out_str, const std::any& object)
 {
- // std::stringstream out_str;
   if (object.type() == typeid(std::string))
   {
     out_str << std::any_cast<std::string>(object);
@@ -59,5 +58,8 @@ std::ostream& operator << (std::ostream &out_str, const std::any& object)
     std::bad_cast ex;
     throw ex;
   }
+  std::stringstream ss;
+  ss << out_str.rdbuf();
+  std::string myString = ss.str();
   return out_str;
 }
