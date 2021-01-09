@@ -13,8 +13,8 @@ bool operator == (const Student& s1, const Student& s2) {
   } else {
     std::stringstream equality_str1;
     std::stringstream equality_str2;
-    equality_str1 = print_any(s1.Group);
-    equality_str2 = print_any(s2.Group);
+    equality_str1 = ssany(s1.Group);
+    equality_str2 = ssany(s2.Group);
     if (equality_str1.str() != equality_str2.str()) return false;
   }
   if (s1.Avg.type() != s2.Avg.type()) {
@@ -22,8 +22,8 @@ bool operator == (const Student& s1, const Student& s2) {
   } else {
     std::stringstream equality_str1;
     std::stringstream equality_str2;
-    equality_str1 = print_any(s1.Avg);
-    equality_str2 = print_any(s2.Avg);
+    equality_str1 = ssany(s1.Avg);
+    equality_str2 = ssany(s2.Avg);
     if (equality_str1.str() != equality_str2.str()) return false;
   }
   if (s1.Debt.type() != s2.Debt.type()) {
@@ -31,8 +31,8 @@ bool operator == (const Student& s1, const Student& s2) {
   } else {
     std::stringstream equality_str1;
     std::stringstream equality_str2;
-    equality_str1 = print_any(s1.Debt);
-    equality_str2 = print_any(s2.Debt);
+    equality_str1 = ssany(s1.Debt);
+    equality_str2 = ssany(s2.Debt);
     if (equality_str1.str() != equality_str2.str()) return false;
   }
   return true;

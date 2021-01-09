@@ -5,5 +5,5 @@
 #include <string>
 
 std::ostream& operator <<(std::ostream &os, const std::any& object);
-std::stringstream print_any(const std::any& object);
+std::stringstream ssany(const std::any& object);
 #endif  // INCLUDE_PRINT_ANY_HPP_

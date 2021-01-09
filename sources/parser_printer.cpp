@@ -71,10 +71,6 @@ std::vector<Student> parser(const std::string& fileName)
     }
     // END_DEBT
 
-    // student.at("name").get_to(currentStudent.Name);
-    // student.at("group").get_to(currentStudent.Group);
-    // student.at("avg").get_to(currentStudent.Avg);
-    // student.at("debt").get_to(currentStudent.Debt);
     students.push_back(currentStudent);
   }
   return students;
@@ -111,8 +107,7 @@ std::ostream& printer(const std::vector<Student>& students, std::ostream& out) {
     out << '|' << ' ' << std::setfill(' ')
               << std::left << std::setw(14)
               << student.Name << '|' << ' ';
-    out << std::setfill(' ') << std::setw(7)
-              << student.Group
+    out << std::setfill(' ') << std::setw(7) << student.Group
               << '|' << ' ';
     out << std::setfill(' ') << std::setw(5)
               << student.Avg << '|' << ' ';

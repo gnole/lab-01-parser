@@ -2,7 +2,7 @@
 #include <print_any.hpp>
 #include <iomanip>
 #include <vector>
-std::stringstream print_any(const std::any& object)
+std::stringstream ssany(const std::any& object)
 {
   std::stringstream out_str;
   if (object.type() == typeid(std::string))
