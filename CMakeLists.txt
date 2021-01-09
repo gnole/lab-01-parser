@@ -43,14 +43,12 @@ target_link_libraries(parser_printer PUBLIC print_any)
 add_executable(tests
         ${CMAKE_CURRENT_SOURCE_DIR}/tests/test.cpp
         )
-#add_executable(main
-#        ${CMAKE_CURRENT_SOURCE_DIR}/sources/main.cpp)
+
 
 
 target_link_libraries(tests gtest_main parser_printer)
 
 
-#target_link_libraries(main PUBLIC parser_printer)
 
 
 
@@ -64,7 +62,6 @@ if(BUILD_COVERAGE)
 
   add_coverage(parser_printer)
   add_coverage(tests)
-#  add_coverage(main)
   list(APPEND LCOV_REMOVE_PATTERNS "'${PROJECT_SOURCE_DIR}/tests/*'")
   coverage_evaluate()
 endif()
