@@ -9,11 +9,7 @@
 #include <typeinfo>
 #include <nlohmann/json.hpp>
 #include <string>
-//убрать маин
-//    пергрузить вывод
-//        преобразование нулптр в функции
-//            убрать коментарии
-//                превести в соответсвие в сооветсвии с изначальной веткой
+
 std::vector<Student> parser(const std::string& fileName)
 {
   std::ifstream file(fileName);

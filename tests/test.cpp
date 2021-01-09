@@ -1,4 +1,4 @@
-// Copyright 2018 Your Name <your_email>
+
 #include <gtest/gtest.h>
 #include <nlohmann/json.hpp>
 #include <parser_printer.hpp>
