@@ -9,7 +9,11 @@
 #include <typeinfo>
 #include <nlohmann/json.hpp>
 #include <string>
-
+//убрать маин
+//    пергрузить вывод
+//        преобразование нулптр в функции
+//            убрать коментарии
+//                превести в соответсвие в сооветсвии с изначальной веткой
 std::vector<Student> parser(const std::string& fileName)
 {
   std::ifstream file(fileName);
@@ -108,12 +112,12 @@ std::ostream& printer(const std::vector<Student>& students, std::ostream& out) {
               << std::left << std::setw(14)
               << student.Name << '|' << ' ';
     out << std::setfill(' ') << std::setw(7)
-              << print_any(student.Group).str()
+              << student.Group
               << '|' << ' ';
     out << std::setfill(' ') << std::setw(5)
-              << print_any(student.Avg).str() << '|' << ' ';
+              << student.Avg << '|' << ' ';
     out << std::setfill(' ') << std::setw(14)
-              << print_any(student.Debt).str()
+              << student.Debt
               << '|';
     out << std::endl;
 
